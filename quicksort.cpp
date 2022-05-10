@@ -52,6 +52,7 @@ int main()
 	{
 		outf<<"\t"<<rand()%(n+1);
 	}
+       outf.close();
 	
 	a=new int[n+1];
 	
@@ -65,7 +66,7 @@ int main()
 	cout<<"the sorted array";
 	outf.open("output.txt");
 	for(int i=0;i<n;i++)
-	{   
+	{        cout<<"\t"<<a[i];
 		outf<<"\t"<<a[i];
 	}
 	outf.close();
